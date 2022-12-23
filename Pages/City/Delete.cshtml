@@ -1,0 +1,30 @@
+﻿@model lb3.Models.City
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete city</h1>
+<form method="post" asp-action="DeleteCity">
+	@Html.HiddenFor(m => m.Id)
+	<div class="form-group row">
+	  <label>Name</label>
+	  <div class="col-sm-8">
+		  @Html.DisplayFor(m => m.Name)
+	  </div>
+  </div>
+  <div class="form-group row">
+		<label>Code</label>
+		<div class="col-sm-8">
+			 @Html.DisplayFor(m => m.Code)
+		</div>
+  </div>
+   <div class="form-group row">
+		<label>Tariff</label>
+		<div class="col-sm-8">
+			 @Html.DisplayFor(m => m.Tariff)
+		</div>
+  </div>
+  <div class="col-sm-8 pt-2">
+	  <button type="submit">Delete city</button>
+  </div>
+</form>

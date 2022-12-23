@@ -1,0 +1,41 @@
+﻿@model lb3.Models.Abonent
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit abonent</h1>
+<form method="post" asp-action="Edit">
+  <div class="form-group row">
+	  <label>FirstName</label>
+	  <div class="col-sm-8">
+		 @Html.EditorFor(m => m.FirstName)
+	  </div>
+  </div>
+  <div class="form-group row">
+		<label>LastName</label>
+		<div class="col-sm-8">
+			 @Html.EditorFor(m => m.LastName)
+		</div>
+  </div>
+   <div class="form-group row">
+		<label>SurName</label>
+		<div class="col-sm-8">
+			 @Html.EditorFor(m => m.SurName)
+		</div>
+  </div>
+   <div class="form-group row">
+		<label>Address</label>
+		<div class="col-sm-8">
+			 @Html.EditorFor(m => m.Address)
+		</div>
+  </div>
+   <div class="form-group row">
+		<label>Phone Number</label>
+		<div class="col-sm-8">
+			 @Html.EditorFor(m => m.PhoneNumber)
+		</div>
+  </div>
+  <div class="col-sm-8 pt-2">
+	  <button type="submit">Edit abonent</button>
+  </div>
+</form>

@@ -1,0 +1,42 @@
+﻿@model lb3.Models.Abonent
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete abonent</h1>
+<form method="post" asp-action="DeleteAbonent">
+	 @Html.HiddenFor(m => m.Id)
+	<div class="form-group row">
+	  <label>FirstName</label>
+	  <div class="col-sm-8">
+		   @Html.DisplayFor(m => m.FirstName)
+	  </div>
+  </div>
+  <div class="form-group row">
+		<label>LastName</label>
+		<div class="col-sm-8">
+			@Html.DisplayFor(m => m.LastName)
+		</div>
+  </div>
+   <div class="form-group row">
+		<label>SurName</label>
+		<div class="col-sm-8">
+			@Html.DisplayFor(m => m.SurName)
+		</div>
+  </div>
+  <div class="form-group row">
+		<label>Address</label>
+		<div class="col-sm-8">
+			 @Html.DisplayFor(m => m.Address)
+		</div>
+  </div>
+  <div class="form-group row">
+		<label>Phone Number</label>
+		<div class="col-sm-8">
+			@Html.DisplayFor(m => m.PhoneNumber)
+		</div>
+  </div>
+  <div class="col-sm-8 pt-2">
+	  <button type="submit">Delete abonent</button>
+  </div>
+</form>
